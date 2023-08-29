@@ -1,15 +1,13 @@
-utxoin="a5a35965dff312e47fe860eae4cc2a28d8307cdbe4c53b4092c009ad623c7ed1#0"
+utxoin="558c3e159d48453297c2f1d9c522c2948cba540515a51a93db9e92a7a12c2b45#0"
 policyid=$(cat NFTpolicy.id)
-address="addr_test1qpc6mrwu9cucrq4w6y69qchflvypq76a47ylvjvm2wph4szeq579yu2z8s4m4tn0a9g4gfce50p25afc24knsf6pj96sz35wnt"
-output="11000000"
-tokenname=$(echo -n "Batch81nft_Mech" | xxd -ps | tr -d '\n')
+address="addr_test1qp65draw5za4msm4sqp9wtv4yejvehecceml20cc6waewrjfqx4dgsjqxh2gql7zjr2776l3thnxgtcvjg3cm8dad3lqn484e6"
+output="22000000"
+tokenname=$(echo -n "BobMecha" | xxd -ps | tr -d '\n')
 tokenammount="1"
 collateral="4cbf990857530696a12b0062546a4b123ad0bef21c67562e32d03e3288bdcd7b#0"
 signerPKH="697a501b7d05766b3d08e39dab43e0f170973d3398b28745b3b8ce55"
 
-#cardano-cli address key-hash --payment-verification-key-file ../Wallet/Adr01.vkey --out-file Adr01.pkh
-#cardano-cli address key-hash --payment-verification-key-file ../Wallet/Adr07.vkey --out-file Adr07.pkh
-cardano-cli transaction policyid --script-file NFTpolicy.script > NFTpolicy.id
+#cardano-cli transaction policyid --script-file NFTpolicy.script > NFTpolicy.id
 
 cardano-cli query protocol-parameters --testnet-magic 2 --out-file protocol.params
 
@@ -19,7 +17,7 @@ cardano-cli transaction build \
   --tx-in $utxoin \
   --required-signer-hash $signerPKH \
   --tx-in-collateral $collateral \
-  --tx-out $nami+$output+"$tokenammount $policyid.$tokenname" \
+  --tx-out $address+$output+"$tokenammount $policyid.$tokenname" \
   --change-address $Adr01 \
   --mint "$tokenammount $policyid.$tokenname" \
   --mint-script-file NFTpolicy.script \
@@ -30,8 +28,8 @@ cardano-cli transaction build \
 
 cardano-cli transaction sign \
   --tx-body-file NFTminting.unsigned \
-  --signing-key-file ../Wallet/Adr01.skey \
-  --signing-key-file ../Wallet/Adr07.skey \
+  --signing-key-file ../../Wallets/Adr01.skey \
+  --signing-key-file ../../Wallets/Adr07.skey \
   --testnet-magic 2 \
   --out-file NFTminting.signed
 

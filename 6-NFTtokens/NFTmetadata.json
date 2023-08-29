@@ -1,9 +1,9 @@
 {
     "721": {
         "d928bcb675e81baed8e7c66e136a6f92f340363d9601cc934a0d1670": {
-          "Batch81nft_Mech": {
+          "BobMecha": {
             "description": "This is Batch 81 NFT minted by Bob",
-            "name": "Batch 81 NFT by Bob",
+            "name": "NFT by Bob",
             "id": 1,
             "image": "https://vortecsla.com/pruebas/imagenes/NFTs/niceMech.gif"
           }
