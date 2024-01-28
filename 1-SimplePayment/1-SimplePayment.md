@@ -46,3 +46,12 @@ cardano-cli query utxo --address $(cat payment2.addr) $PREVIEW
                                TxHash                                 TxIx        Amount
     --------------------------------------------------------------------------------------
     7d721d8a0cc2f3d87f44d4df22d6815f58fb67f421b283462ff3b823c36f34a6     1        5000000000 lovelace + TxOutDatumHashNone
+
+
+## HandsOn
+
+### 1- Send 1100 tADA to Roberto's wallet addr_test1qpc6mrwu9cucrq4w6y69qchflvypq76a47ylvjvm2wph4szeq579yu2z8s4m4tn0a9g4gfce50p25afc24knsf6pj96sz35wnt
+
+### 2- Send five (5) 100tADA UTxOs to your second address (payment2 in the sample).
+
+### 3- Send two(2) 100tADA UTxOs to your address and three(3) 50tADA UTxOs to Roberto's wallet.
