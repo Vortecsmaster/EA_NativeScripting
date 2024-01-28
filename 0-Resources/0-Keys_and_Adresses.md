@@ -45,7 +45,7 @@ Generate necessary keys for the second account
 
 And check the UTxO for the payment address 
 ```bash    
-    cardano-cli query utxo --address $(cat payment1.addr) $PREVIEW
+    cardano-cli query utxo --address addr_test1vzl0uq5su8jt90vwx6zv8mvp9x7hf90pnylrhcnh3afyx4gcf747v --testnet-magic 2
 
                                TxHash                                 TxIx        Amount
     --------------------------------------------------------------------------------------

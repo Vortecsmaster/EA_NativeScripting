@@ -9,7 +9,7 @@
 #### Select UTxO with 10,000 tADA (or any with more than the output of the transaction)
 
 ```bash
-UTXO1=7b4956b103d47908318ee92aa0790ff4b36fe7940991f0be350c9085fc4da175#0
+export UTXO1=7b4956b103d47908318ee92aa0790ff4b36fe7940991f0be350c9085fc4da175#0
 
 cardano-cli transaction build \
     --babbage-era \
