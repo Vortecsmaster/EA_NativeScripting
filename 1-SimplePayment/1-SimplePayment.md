@@ -14,7 +14,7 @@ UTXO1=7b4956b103d47908318ee92aa0790ff4b36fe7940991f0be350c9085fc4da175#0
 cardano-cli transaction build \
     --babbage-era \
     --tx-in $UTXO1 \
-    --tx-out $(cat payment2.addr)+5000000000 \
+    --tx-out $(cat ../wallets/payment2.addr)+5000000000 \
     --change-address $(cat payment1.addr) \
     $PREVIEW \
     --out-file paymentTx.unsigned
