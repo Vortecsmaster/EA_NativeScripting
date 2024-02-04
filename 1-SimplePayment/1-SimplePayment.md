@@ -56,10 +56,10 @@ cardano-cli query utxo --address $(cat payment2.addr) $PREVIEW
 
 
 
-### 1- Send 1100 tADA to Roberto's address 
+### 1- Define a single transaction that send 1100 tADA to Roberto's address 
 
-### 2- Provide value from your AddressA and send five (5) 100tADA UTxOs to your AddressB.
+### 2- Define a single transaction that spend value from your AddressA and send five (5) 100tADA UTxOs to your AddressB.
 
-### 3- Provide value from your AddressB and send two(2) 100tADA UTxOs to your AddressA and three(3) 50tADA UTxOs to Roberto's address.
+### 3- Define a single transactino that spend value from  AddressB and send two(2) 100tADA UTxOs to your AddressA and three(3) 50tADA UTxOs to Roberto's address.
 
-### 4- Take 2 inputs from your AddressA with more than 100tADA and pay to Roberto's Address 90, and your wallet 10, and send the change back to your wallet.
+### 4- Define a single transaction that takes 2 inputs from your AddressA with more than 100tADA and pay to Roberto's Address 90, and your wallet 10, and send the change back to your wallet.
