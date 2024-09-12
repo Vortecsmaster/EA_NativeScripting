@@ -4,8 +4,8 @@
 Lets create an environment variable as shortcut, you can make it permanent including in the .bashrc file, and restarting terminal.
 ```bash
     export PREVIEW="--testnet-magic 2"
-
 ```
+
 ### Note: The Below steps will help you setup an address and fund it with testAda.
 If not, execute the following steps to create the address and fund it with test ada.
 ```bash
@@ -22,7 +22,8 @@ If not, execute the following steps to create the address and fund it with test 
     --stake-verification-key-file stake1.vkey \
     --out-file payment1.addr \
     $PREVIEW
-```   
+```
+
  **Fund the payment address with 1000 Test Ada from the Faucet ([ADA Testnet Faucet](https://docs.cardano.org/cardano-testnet/tools/faucet/))**
 
 
