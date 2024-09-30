@@ -1,13 +1,14 @@
 # Keys and Addresses - First steps using the Cardano blockchain 
 
-## Part 1 Create a new set of keys and address 
+## Activity 0-1 Create a new set of keys and address 
 Lets create an environment variable as shortcut, you can make it permanent including in the .bashrc file, and restarting terminal.
 ```bash
     export PREVIEW="--testnet-magic 2"
 ```
 
 ### Note: The Below steps will help you setup an address and fund it with testAda.
-If not, execute the following steps to create the address and fund it with test ada.
+Execute the following steps to create the address and fund it with test ada.
+
 ```bash
     cardano-cli address key-gen \
     --verification-key-file payment1.vkey \
@@ -23,8 +24,11 @@ If not, execute the following steps to create the address and fund it with test 
     --out-file payment1.addr \
     $PREVIEW
 ```
+#### Observations:
+- Names for signing keys and verification keys are arbitrary, but its usefull to keep them named together.
+- The building of the address require proper identification of the network (preview testnet in this example), following CiP-019 specs for the header of the constructed address.
 
- **Fund the payment address with 1000 Test Ada from the Faucet ([ADA Testnet Faucet](https://docs.cardano.org/cardano-testnet/tools/faucet/))**
+ **Fund the payment address with 10000 Test Ada from the Faucet ([ADA Testnet Faucet](https://docs.cardano.org/cardano-testnet/tools/faucet/))**
 
 
 Generate necessary keys for the second account
