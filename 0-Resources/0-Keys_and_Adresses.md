@@ -1,6 +1,6 @@
 # Keys and Addresses - First steps using the Cardano blockchain 
 
-## Activity 0-1 Create a new set of keys and address 
+## Walkthru 0-1 Create a new set of keys and address 
 Lets create an environment variable as shortcut, you can make it permanent including in the .bashrc file, and restarting terminal.
 ```bash
     export PREVIEW="--testnet-magic 2"
@@ -56,3 +56,8 @@ And check the UTxO for the payment address
     --------------------------------------------------------------------------------------
     7b4956b103d47908318ee92aa0790ff4b36fe7940991f0be350c9085fc4da175     1        100000000000 lovelace + TxOutDatumHashNone
 ```
+
+## Actities
+
+#### 0.1. Create 2 or 3 addresses
+#### 0.2. Fund one of your address with the Cardano Faucet.
